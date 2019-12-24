@@ -27,14 +27,24 @@ let questions = ["马云是中国首富","刘强东最早是在中关村卖光�
     @IBOutlet weak var countLabel: UILabel!
     
     @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var alert: UIButton!
     //初始化
     
     override func viewDidLoad() {
         anwser.text = questions[questionlndex]
         countLabel.text = "\(questionslndex+1)/5"
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        // Do any additional setup after loading the
+        //view, typically from a nib.
+        UIAlertAction.Style.default,handler:{
+            action in print("确定")
+        }
+        aler.addAction（UIAlerAction(title:"取消",Style:UIAlertAction.Style.destructive,handler:{
+            action in print("取消")
+        })
+        
+    
 
 
     @IBAction func yes(_ sender: UIButton) {
@@ -66,6 +76,9 @@ func next(){
     countLabel.text = "\(questionslndex+1)/5"
     questionsLabel.text = questions[questionslndex]
     
+    let alert = UIAlertController(title."提示",message:"弹出了一个框！",preferredStyle:UIAlertController.Style.alert)
+    present(alert,animated:true,completion:nil)
+    presentedViewcontroller?.dismiss(animated:Bool,completion:)
 }
 
 

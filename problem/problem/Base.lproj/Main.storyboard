@@ -79,11 +79,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-Eh-pEP">
+                                <rect key="frame" x="147" y="337" width="86" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.37044479000000002" blue="0.50035770629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="alert" destination="Lxr-Eh-pEP" id="VTB-X4-zus"/>
                         <outlet property="anwser" destination="brE-op-gDx" id="n7l-Lv-2V7"/>
                         <outlet property="countLabel" destination="ZCD-ut-PNI" id="Zk6-kl-h4x"/>
                         <outlet property="questionLabel" destination="sFu-OE-m6i" id="4cY-xh-hU0"/>
